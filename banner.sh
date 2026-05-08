@@ -16,13 +16,18 @@ NAME=${NAME:-"TECHCHIP"}
 SLOGAN=${SLOGAN:-"Your True Tech Navigator"}
 WEBSITE=${WEBSITE:-"www.techchip.net"}
 
-echo -e "\n\e[1;32m[+] Installing required tools (figlet, wget)...\e[0m"
-if [ "$EUID" -ne 0 ]; then
-  sudo apt-get update -y
-  sudo apt-get install -y figlet wget
+# Check if tools are already installed and working
+if ! command -v figlet &> /dev/null || ! command -v wget &> /dev/null; then
+    echo -e "\n\e[1;33m[!] Required tools missing or broken. Installing/Repairing...\e[0m"
+    if [ "$EUID" -ne 0 ]; then
+        sudo apt-get update -y
+        sudo apt-get install -y --fix-missing figlet wget
+    else
+        apt-get update -y
+        apt-get install -y --fix-missing figlet wget
+    fi
 else
-  apt-get update -y
-  apt-get install -y figlet wget
+    echo -e "\n\e[1;32m[+] Required tools (figlet, wget) are already installed and working perfectly.\e[0m"
 fi
 
 echo -e "\e[1;32m[+] Downloading the blocky font...\e[0m"
