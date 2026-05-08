@@ -13,7 +13,7 @@ This repository contains a simple, interactive, single-line terminal banner setu
 You can install this directly from the terminal without downloading the code manually. Just run the following command:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/banner.sh | bash
+curl -sL https://raw.githubusercontent.com/rubeltechcom/Termenal/main/banner.sh | bash
 ```
 
 *(Note: If you are cloning or forking this repository, make sure to replace `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` in the link above with your actual GitHub details).*
