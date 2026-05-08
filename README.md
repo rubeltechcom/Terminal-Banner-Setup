@@ -1,6 +1,11 @@
-# Terminal Banner Setup
+# 🎨 Dynamic Terminal Banner Generator
 
-This repository contains a simple, interactive, single-line terminal banner setup script. It uses `figlet` to generate a customized block-letter banner (inspired by professional terminal styles) with a dual-color text split, custom borders, and your own slogan and website.
+A powerful, interactive, and one-line setup script to instantly transform your dull terminal into a professional, dual-color, and personalized hacker-style interface! Inspired by premium terminal setups, this script automatically crafts a block-letter banner with custom borders, a custom name, and your personal slogan.
+
+## 🚀 Why Use This?
+- **Zero Configuration:** No need to manually edit `.bashrc` or `.zshrc`. It handles everything.
+- **Highly Customizable:** Interactively asks for your Name, Slogan, and Website link.
+- **Stunning Aesthetics:** Generates a dual-tone (Blue & Red) ASCII art banner perfectly framed inside a double-lined orange border.
 
 ## Features
 - **Interactive Setup**: Automatically prompts you for your Name, Slogan, and Website right from the terminal.
