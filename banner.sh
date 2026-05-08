@@ -7,14 +7,14 @@ echo -e "\e[1;32m      Welcome to Terminal Banner Setup\e[0m"
 echo -e "\e[1;36m====================================================\e[0m"
 
 # Read inputs directly from /dev/tty so it works with curl | bash
-read -p "Enter your Terminal Name (e.g., TECHCHIP): " NAME </dev/tty
+read -p "Enter your Terminal Name (e.g., RUBELTECH): " NAME </dev/tty
 read -p "Enter your Slogan (e.g., Your True Tech Navigator): " SLOGAN </dev/tty
-read -p "Enter your Website (e.g., www.techchip.net): " WEBSITE </dev/tty
+read -p "Enter your Website (e.g., www.rubeltech.com): " WEBSITE </dev/tty
 
 # Set default values if empty
-NAME=${NAME:-"TECHCHIP"}
+NAME=${NAME:-"RUBELTECH"}
 SLOGAN=${SLOGAN:-"Your True Tech Navigator"}
-WEBSITE=${WEBSITE:-"www.techchip.net"}
+WEBSITE=${WEBSITE:-"www.rubeltech.com"}
 
 # Check if tools are already installed and working
 if ! command -v figlet &> /dev/null || ! command -v wget &> /dev/null; then
